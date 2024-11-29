@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content=">.<">
+    <meta property="og:title" content="">
+    <meta property="og:image:height" content="967">
+    <title>xdbg</title>
+
+    <script src="js/8_-Ntgmvz1uY7XmcCn-77_ol_as.js"></script>
+    <link rel="stylesheet" href="css/disable-click.css">
+    
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            font-family: monospace;
+            color: #FFF;
+            font-weight: bold;
+            font-size: small;
+        }
+
+        a {
+            color: #FFF;
+        }
+
+        p, pre {
+            text-align: center;
+            margin: 0.5em auto;
+            max-width: 600px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <title>Disable Right-Click and Key Combinations</title>
+    
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        function ctrlShiftKey(e, keyCode) {
+            return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+        }
+
+        document.onkeydown = (e) => {
+            // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+            if (
+                e.keyCode === 123 ||
+                ctrlShiftKey(e, 'I') ||
+                ctrlShiftKey(e, 'J') ||
+                ctrlShiftKey(e, 'C') ||
+                (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+            )
+                return false;
+        };
+    </script>
+
+    <table width="100%" height="100%" border="0">
+        <tbody>
+            <tr>
+                <td valign="middle" align="center">
+                    <p>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Omar_Mateen.jpg" class="center" width="50" border="0">
+                    </p>
+                    <pre><a href="https://discord.gg/shanglock" target="_blank" style="color: #800080;">shanglock</a><br></pre>
+                    <pre>
+                        <a href="https://doxbin.com/user/glokk40spaz" target="_blank">xdbg</a><br>
+                        <a href="https://guns.lol/pardon" target="_blank">nbaoldman</a><br>
+                        <a href="https://discord.com/users/890863752956739625" target="_blank">hamza</a><br>
+                    </pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function handleClick() {
+            const nameElements = document.querySelectorAll('.clickmessage');
+            nameElements.forEach(function(element) {
+                element.style.display = 'none';
+            });
+
+            const audioUrls = [
+                "https://files.catbox.moe/c85e6p.mp3",
+                "https://files.catbox.moe/11nfhg.mp3",
+                "https://files.catbox.moe/9635bq.mp3",
+                "https://files.catbox.moe/qdgk3r.mp3"
+            ];
+
+            const rndAudio = Math.floor(Math.random() * audioUrls.length);
+
+            const audioItem = new Audio(audioUrls[rndAudio]);
+            audioItem.volume = 1;
+            audioItem.loop = true;
+            audioItem.play();
+
+            document.removeEventListener("click", handleClick);
+        }
+
+        document.addEventListener("click", handleClick);
+    </script>
+
+    <style>
+        /* Prevent text selection */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none; /* Standard syntax */
+        }
+    </style>
+
+    <div id="backdrop">
+        <div id="enterText">click to proceed</div>
+    </div>
+
+    <div id="content"></div>
+
+    <script>
+        document.getElementById('backdrop').addEventListener('click', function() {
+            document.getElementById('backdrop').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
