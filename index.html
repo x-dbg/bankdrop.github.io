@@ -1,160 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <title>fedded</title>
-    <meta charset="utf-8">
-    <meta property="og:site_name" content=">.<">
-    <meta property="og:title" content="">
-    <meta property="og:image:height" content="967">
-    <script src="js/8_-Ntgmvz1uY7XmcCn-77_ol_as.js"></script>
-    <script src="css/disable-click.css"></script>
+    <title>dada</title>
+    <textarea>hello my name is turtle</textarea>
     <style>
-        /* Set the body and html height to 100% */
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: monospace;
-            color: #FFF;
-            font-weight: bold;
-            font-size: small;
-        }
+    {
+        size: 5500px;
+    }
 
-        /* Video background styles */
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the video covers the entire page */
-            z-index: -1; /* Puts the video behind the content */
-        }
-
-        /* Centered content over the video */
-        .content {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: white;
-            font-size: 2rem;
-            padding: 20px;
-        }
-
-        /* Links and paragraph styles */
-        a {
-            color: #FFF;
-        }
-
-        p, pre {
-            text-align: center;
-            margin: 0.5em auto;
-            max-width: 600px;
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
     </style>
-</head>
-<body>
-
-    <!-- Background video -->
-    <video class="video-background" autoplay loop>
-        <source src="https://files.catbox.moe/l0u6ja.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Content over the video -->
-    <div class="content">
-        <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Omar_Mateen.jpg" class="center" width="50" border="0">
-        </p>
-        <pre><a href="https://discord.gg/s7fZHMuteK" target="_blank" style="color: #800080;">society</a><br></pre>
-        <pre><a href="https://t.me/steuerbetruger" target="_blank">me</a><br></pre>
-    </div>
-
-    <!-- Disable Right-Click and Key Combinations Script -->
-    <script>
-        // Disable right-click
-        document.addEventListener('contextmenu', (e) => e.preventDefault());
-
-        function ctrlShiftKey(e, keyCode) {
-          return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-        }
-
-        document.onkeydown = (e) => {
-          // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-          if (
-            e.keyCode === 123 ||
-            ctrlShiftKey(e, 'I') ||
-            ctrlShiftKey(e, 'J') ||
-            ctrlShiftKey(e, 'C') ||
-            (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-          )
-            return false;
-        };
-    </script>
-
-    <!-- Prevent text selection -->
-    <style>
-        body {
-            -webkit-user-select: none; /* Safari */
-            -ms-user-select: none; /* IE 10+ */
-            user-select: none; /* Standard syntax */
-        }
+    <img src="https://cdn.discordapp.com/avatars/898264179176243280/ea94e6fa90f8da3b4e2701548f16fe47.webp?size=1024&format=webp">
+    <style>img
+    {
+        width: 300px;
+        float: left;
+        border-radius: 500px;
+    }
     </style>
-
-    <!-- Click to Enter Section -->
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: monospace;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999;
-            cursor: pointer;
-        }
-
-        #enterText {
-            font-size: 20px;
-        }
-
-        #content {
-            display: none;
-            padding: 20px;
-        }
-    </style>
-
-    <div id="backdrop">
-        <div id="enterText">click to proceed</div>
-    </div>
-
-    <div id="content">
-    </div>
-
-    <script>
-        document.getElementById('backdrop').addEventListener('click', function() {
-            document.getElementById('backdrop').style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        });
-    </script>
-
-</body>
-</html>
